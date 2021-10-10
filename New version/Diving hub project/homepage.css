@@ -1,0 +1,291 @@
+
+body {
+    margin: auto auto;  
+ 
+}
+.section1{
+    background-image: url(egypt-sharm-el-sheikh.png);
+    background-repeat: no-repeat;
+    height: 620px;
+    background-size: cover;
+    background-position: center ;
+}
+
+ .sub {
+    padding: 0rem 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFF;
+    box-shadow: 0px 3px 16px #00000029;
+    opacity: 0.85;
+    padding: 5px;
+    margin-top: 3rem;
+
+}
+.header button{
+    display: none;
+}
+.header ul{
+    display: flex;
+}
+
+.nav-items img{
+    width: 23px;
+    margin-right: 5px;
+}
+.nav-items  .dollar-icon{
+    width: 13px;
+}
+ 
+.nav-items li {
+  
+   margin-right: 12px;
+   
+}
+.nav-items span{
+    color: #193164;
+}
+.nav-items li , .nav-items a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: #FFFF;
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3rem;
+
+}
+.search input{
+    width:80%;
+    height: 3rem; 
+    padding-left: 10px;
+}
+.search button {
+    background-color: #F1B146;
+    color: #FFFF;
+    border-radius: 5px;
+    width: 20%;
+    height: 3.5rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.service-tabs{
+    padding: 1px;
+    background-color: #FFFF;
+    box-shadow: 0px 3px 16px #00000029;
+    margin: -2rem 4rem;
+    height: 85px;
+
+}
+.service-tabs ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+}
+
+.service-tabs li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scuba-diving{
+    width: 50px;
+}
+.show-more {
+    width: 50px;
+    height: 40px;
+}
+.service-tabs a , .service-tabs li{
+text-decoration: none;
+}
+
+.features h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+.features span {
+    color: #F1B146;
+}
+.features{
+     margin: 0rem 4rem;
+     position: relative;
+}
+.grid-container {
+
+    display: grid;
+    grid-template-columns:repeat( 12 , 1fr) ;
+    grid-template-rows: 2fr;
+    grid-gap: 15px;
+}
+.grid-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Cairo{
+    grid-area: 1/1/3/7 ;
+    height: 350px;
+
+}
+.safaga{
+    grid-area: 1/7/3/10;
+}
+.dahab{
+    grid-area: 1/10/3/13;
+}
+
+.cairo-button{
+    box-shadow: 0px 3px 10px #00000029;
+    opacity: 0.9;
+    width: calc (100) ;
+    font-size: 2rem;
+    border: none;
+    position: absolute;
+    left: 100px;
+ 
+
+}
+
+  /* Large devices (laptops/desktops,) */
+
+ @media only screen and (min-width: 768px) and (max-width: 992px ){
+         .section1{
+             height: 602px;
+        }
+        .sub{
+            padding: 0rem 1.5rem;
+            height: 100%;
+        }
+        .header{
+            margin-top: 1rem;
+            margin-bottom: 0rem;
+        }
+        .header .logo  {
+            width: 200px;
+        }
+        .header button{
+              display: none;
+          }
+          .header ul{
+              display: flex;
+            flex-direction: row;
+            
+        }
+        .search{
+            margin-bottom: 3rem;
+        }
+        .middle{
+            font-size: 30px;
+            text-align: center;
+        }
+        .service-tabs{
+            width: auto;
+            margin: -2rem 1.5rem;
+        }
+    }
+
+
+/* Mobile devices */ 
+@media only screen and (max-width: 767px) {
+
+    .section1{
+        height:580px;
+    }
+   
+    .sub{
+       padding: 0rem 1rem ;
+       height: 100%;
+    }
+    .header{
+        max-width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .header .logo{
+        
+        width: 220px;
+    } 
+
+    .header button {
+        display: block;
+        width: 3rem;
+         height: 3rem;
+         border: none;
+    }
+     i.fa-bars{
+         font-size: 1.5rem;
+         color: grey;
+     }
+
+    .header ul {
+        display: none;
+    }
+    .search {
+        flex-wrap: wrap;
+    }
+    .search input {
+
+        width: 100%;
+        height: 2rem;
+        border: none;
+        border-radius: 5px;
+    }
+    .search button {
+        width: 100%;
+        height: 2.5rem;
+        margin-top: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .service-tabs{
+        width: 100%;
+        margin: 0rem;
+        height: 230px;
+    }
+    .service-tabs ul{
+        justify-content: center;
+        padding: 0rem;
+    }
+    .service-tabs li{
+        font-family: gnuolane,sans-serif;
+         width: 170px;
+        height: 110px;
+        align-items: center;
+        text-align: center;
+        margin-top: 0.5rem;
+
+    }
+    
+}
+
+
